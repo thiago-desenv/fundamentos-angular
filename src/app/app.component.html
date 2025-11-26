@@ -25,3 +25,24 @@
 <button [title]="buttonTitle">Teste</button>
 <button [attr.disabled]="buttonDisabled ? true : null">Disabled</button>
 <button (click)="onButtonClick()">Mudar props</button>
+
+<br>
+<br>
+<br>
+<h1>CSS binding</h1>
+<button style="width: 100px; background-color: aqua;">Botão 0</button>
+<br>
+<button [style.width]="widthButton1" [style.backgroundColor]="backgropundCollorButton1">Botão 1</button>
+<br>
+<button [style.width.px]="widthButton2" [style.backgroundColor]="backgropundCollorButton1">Botão 2</button>
+<br>
+<button [style]="'width: 140px; background-color: yellow;'">Botão 3</button>
+<br>
+<button [style]="{ width: '150px', backgroundColor: 'orange' }">Botão 4</button>
+<br>
+<button [style]="stylesObj">Botão 5</button>
+<br>
+<button (click)="atualizarStyleObj()">Atualizar obj</button>
+<button (click)="atualizarStyleObjCorreto()">Atualizar obj correto</button>
+<br>
+<button (click)="atualizarWidth()">Atualizar width</button>

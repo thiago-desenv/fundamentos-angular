@@ -13,6 +13,12 @@ export class AppComponent {
   buttonTitle = "Texto do botãosss";
   buttonDisabled = false;
 
+  widthButton1 = "110px";
+  widthButton2 = 130;
+  backgropundCollorButton1 = "red"
+  stylesObj = { width: '160px', backgroundColor: 'gray', color: 'white' }
+
+
   habilitarInput() {
     this.isDisabled = false;
   }
@@ -46,5 +52,18 @@ export class AppComponent {
   onButtonClick() {
     this.buttonTitle = "Título alteradooo"
     this.buttonDisabled = !this.buttonDisabled;
+  }
+
+  atualizarStyleObj() {
+    this.stylesObj.width = '170px';
+    this.stylesObj.backgroundColor = 'green';
+  }
+
+  atualizarStyleObjCorreto() {
+    this.stylesObj = { width: '170px', backgroundColor: 'green', color: 'white' }
+  }
+
+  atualizarWidth() {
+    this.widthButton2 = 200;
   }
 }
