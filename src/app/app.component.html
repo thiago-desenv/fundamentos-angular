@@ -1,3 +1,4 @@
+<h1>Property binding</h1>
 <input
   id="meu-input"
   [value]="inputText"
@@ -15,3 +16,12 @@
 <button (click)="setTextTypeInput()">Texto</button>
 <br>
 <button (click)="logInputText()">log</button>
+
+<br>
+<br>
+<br>
+<h1>Attribute binding</h1>
+<button [attr.title]="buttonTitle">Teste</button>
+<button [title]="buttonTitle">Teste</button>
+<button [attr.disabled]="buttonDisabled ? true : null">Disabled</button>
+<button (click)="onButtonClick()">Mudar props</button>
