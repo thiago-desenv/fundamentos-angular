@@ -18,6 +18,9 @@ export class AppComponent {
   backgropundCollorButton1 = "red"
   stylesObj = { width: '160px', backgroundColor: 'gray', color: 'white' }
 
+  isRedButton = true;
+  isGreenButton = true;
+
 
   habilitarInput() {
     this.isDisabled = false;

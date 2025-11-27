@@ -46,3 +46,13 @@
 <button (click)="atualizarStyleObjCorreto()">Atualizar obj correto</button>
 <br>
 <button (click)="atualizarWidth()">Atualizar width</button>
+<br>
+
+<h1>CSS Class binding</h1>
+<button [class.red-button]="isRedButton">Vermelho</button>
+<button [class.green-button]="isGreenButton">Verde</button>
+
+<button [class]="'red-button green-button'">Cor</button>
+
+<button [class]="{ 'red-button': !isGreenButton, 'green-button': isGreenButton }">Objeto</button>
+<button (click)="isGreenButton = false">Mudar cor do botão Objeto</button>
