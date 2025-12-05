@@ -6,11 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name: string = 'Kuririn';
+  minhaProp = true;
 
-  handleInputChange(event: any) {
-    console.log(event);
+  toggleProp() {
+    this.minhaProp = !this.minhaProp;
   }
+
+  // name: string = 'Kuririn';
+
+  // handleInputChange(event: any) {
+  //   console.log(event);
+  // }
 
   // inputText = "Texto inicial alterado";
   // inputType = "text";
