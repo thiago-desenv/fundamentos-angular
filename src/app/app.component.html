@@ -1,4 +1,9 @@
-<div style="background-color: green;" *ngIf="isFalsy()">Sou uma div!</div>
+<div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou uma div!</div>
+
+<ng-template #meuTemplate>
+  <div style="background-color: red;">Sou uma outra div!</div>
+</ng-template>
+
 
 <button (click)="toggleProp()">Alterar div</button>
 
