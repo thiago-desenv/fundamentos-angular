@@ -7,9 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   minhaProp = true;
+  pessoa = {
+    status: "false"
+  }
 
   toggleProp() {
     this.minhaProp = !this.minhaProp;
+  }
+
+  isTruthy() {
+    // return {};
+    // // return true;
+    // // return 1;
+    // // return "teste";
+    // // return "0";
+    // // return "false";
+    return this.pessoa.status;
   }
 
   // name: string = 'Kuririn';
