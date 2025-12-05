@@ -1,4 +1,9 @@
-<h1>Property binding</h1>
+<h1>Nome:</h1>
+<input type="text" [ngModel]="name" (ngModelChange)="handleInputChange($event)">
+
+<h1>Nome digitado: {{ name }}</h1>
+
+<!-- <h1>Property binding</h1>
 <input
   id="meu-input"
   [value]="inputText"
@@ -55,4 +60,4 @@
 <button [class]="'red-button green-button'">Cor</button>
 
 <button [class]="{ 'red-button': !isGreenButton, 'green-button': isGreenButton }">Objeto</button>
-<button (click)="isGreenButton = false">Mudar cor do botão Objeto</button>
+<button (click)="isGreenButton = false">Mudar cor do botão Objeto</button> -->

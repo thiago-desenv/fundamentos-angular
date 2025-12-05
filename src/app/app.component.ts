@@ -6,67 +6,73 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  inputText = "Texto inicial alterado";
-  inputType = "text";
-  isDisabled = false;
+  name: string = 'Kuririn';
 
-  buttonTitle = "Texto do botãosss";
-  buttonDisabled = false;
-
-  widthButton1 = "110px";
-  widthButton2 = 130;
-  backgropundCollorButton1 = "red"
-  stylesObj = { width: '160px', backgroundColor: 'gray', color: 'white' }
-
-  isRedButton = true;
-  isGreenButton = true;
-
-
-  habilitarInput() {
-    this.isDisabled = false;
+  handleInputChange(event: any) {
+    this.name = event;
   }
 
-  desabilitarInput() {
-    this.isDisabled = true;
-  }
+  // inputText = "Texto inicial alterado";
+  // inputType = "text";
+  // isDisabled = false;
 
-  setPasswordTypeInput() {
-    this.inputType = "password";
-  }
+  // buttonTitle = "Texto do botãosss";
+  // buttonDisabled = false;
 
-  setTextTypeInput() {
-    this.inputType = "text";
-  }
+  // widthButton1 = "110px";
+  // widthButton2 = 130;
+  // backgropundCollorButton1 = "red"
+  // stylesObj = { width: '160px', backgroundColor: 'gray', color: 'white' }
 
-  logInputText() {
-    console.log(this.inputText);
-  }
+  // isRedButton = true;
+  // isGreenButton = true;
 
-  handleInputKeyup(event: KeyboardEvent) {
-    const currentText = (event.target as HTMLInputElement).value
-    console.log(currentText);
-  }
 
-  handleInputEvent(event: Event) {
-    const currentText = (event.target as HTMLInputElement).value;
-    console.log(currentText);
-  }
+  // habilitarInput() {
+  //   this.isDisabled = false;
+  // }
 
-  onButtonClick() {
-    this.buttonTitle = "Título alteradooo"
-    this.buttonDisabled = !this.buttonDisabled;
-  }
+  // desabilitarInput() {
+  //   this.isDisabled = true;
+  // }
 
-  atualizarStyleObj() {
-    this.stylesObj.width = '170px';
-    this.stylesObj.backgroundColor = 'green';
-  }
+  // setPasswordTypeInput() {
+  //   this.inputType = "password";
+  // }
 
-  atualizarStyleObjCorreto() {
-    this.stylesObj = { width: '170px', backgroundColor: 'green', color: 'white' }
-  }
+  // setTextTypeInput() {
+  //   this.inputType = "text";
+  // }
 
-  atualizarWidth() {
-    this.widthButton2 = 200;
-  }
+  // logInputText() {
+  //   console.log(this.inputText);
+  // }
+
+  // handleInputKeyup(event: KeyboardEvent) {
+  //   const currentText = (event.target as HTMLInputElement).value
+  //   console.log(currentText);
+  // }
+
+  // handleInputEvent(event: Event) {
+  //   const currentText = (event.target as HTMLInputElement).value;
+  //   console.log(currentText);
+  // }
+
+  // onButtonClick() {
+  //   this.buttonTitle = "Título alteradooo"
+  //   this.buttonDisabled = !this.buttonDisabled;
+  // }
+
+  // atualizarStyleObj() {
+  //   this.stylesObj.width = '170px';
+  //   this.stylesObj.backgroundColor = 'green';
+  // }
+
+  // atualizarStyleObjCorreto() {
+  //   this.stylesObj = { width: '170px', backgroundColor: 'green', color: 'white' }
+  // }
+
+  // atualizarWidth() {
+  //   this.widthButton2 = 200;
+  // }
 }
