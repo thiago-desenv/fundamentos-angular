@@ -8,9 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   name: string = 'Kuririn';
 
-  handleInputChange(event: any) {
-    this.name = event;
-  }
+  // handleInputChange(event: any) {
+  //   this.name = event;
+  // }
 
   // inputText = "Texto inicial alterado";
   // inputType = "text";
