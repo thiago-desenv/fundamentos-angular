@@ -1,10 +1,29 @@
+<div class="list">
+  <div class="item item--odd">
+    <p class="item__name">Kuririn da Silva</p>
+    <p class="item__age">01 ano</p>
+  </div>
+  <div class="item item--highlighted">
+    <p class="item__name">Fulano sa Silva</p>
+    <p class="item__age">34 anos</p>
+  </div>
+  <div class="item item--odd">
+    <p class="item__name">Jorginho Carvalho</p>
+    <p class="item__age">55 anos</p>
+  </div>
+  <div class="item">
+    <p class="item__name">Joãozinho da Silva</p>
+    <p class="item__age">18 anos</p>
+  </div>
+</div>
+
 <!-- <div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou uma div!</div>
 
 <ng-template #meuTemplate>
   <div style="background-color: red;">Sou uma outra div!</div>
 </ng-template> -->
 
-<ng-container *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"></ng-container>
+<!-- <ng-container *ngIf="minhaProp; then meuTemplate; else meuOutroTemplate"></ng-container>
 
 <ng-template #meuTemplate>
   <div style="background-color: pink;">Sou a div "then"!</div>
@@ -14,7 +33,7 @@
   <div style="background-color: plum;">Sou a div "else"!</div>
 </ng-template>
 
-<button (click)="toggleProp()">Alterar div</button>
+<button (click)="toggleProp()">Alterar div</button> -->
 
 <!-- <h1>Nome:</h1>
 <input type="text" [(ngModel)]="name" (ngModelChange)="handleInputChange($event)">

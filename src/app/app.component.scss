@@ -1,9 +1,39 @@
-.red-button {
-  background-color: rgb(215, 58, 58);
-  color: white;
+.list {
+  background-color: black;
+  padding: 3px;
 }
 
-.green-button {
-  background-color: rgb(42, 222, 42);
-  color: white;
+.item {
+  padding: 15px;
+  background-color: beige;
+
+  &__name {
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  &__age {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &--odd {
+    background-color: rgb(82, 82, 82);
+  }
+
+  &--highlighted {
+    color: white;
+    background-color: rgb(60, 229, 54);
+    border: 3px solid rgb(168, 249, 131)';'
+  }
 }
+
+// .red-button {
+//   background-color: rgb(215, 58, 58);
+//   color: white;
+// }
+
+// .green-button {
+//   background-color: rgb(42, 222, 42);
+//   color: white;
+// }
