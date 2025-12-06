@@ -6,38 +6,40 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  minhaProp = false;
-  pessoa: any = {
-    status: "false",
-    name: ""
-  }
+  listPessoas = ['Kuririn', 'João', true, 1000];
 
-  toggleProp() {
-    this.minhaProp = !this.minhaProp;
-  }
+  // minhaProp = false;
+  // pessoa: any = {
+  //   status: "false",
+  //   name: ""
+  // }
 
-  isTruthy() {
-    // return {};
-    // // return true;
-    // // return 1;
-    // // return "teste";
-    // // return "0";
-    // // return "false";
-    return this.pessoa.status;
-  }
+  // toggleProp() {
+  //   this.minhaProp = !this.minhaProp;
+  // }
 
-  isFalsy() {
-    // return false;
-    // return 0;
-    // return "";
-    // return '';
-    // return null;
-    // return undefined;
-    // return -0;
-    // return NaN;
-    // return this.pessoa.name;
-    return this.pessoa.endereco?.rua;
-  }
+  // isTruthy() {
+  //   // return {};
+  //   // // return true;
+  //   // // return 1;
+  //   // // return "teste";
+  //   // // return "0";
+  //   // // return "false";
+  //   return this.pessoa.status;
+  // }
+
+  // isFalsy() {
+  //   // return false;
+  //   // return 0;
+  //   // return "";
+  //   // return '';
+  //   // return null;
+  //   // return undefined;
+  //   // return -0;
+  //   // return NaN;
+  //   // return this.pessoa.name;
+  //   return this.pessoa.endereco?.rua;
+  // }
 
   // name: string = 'Kuririn';
 
