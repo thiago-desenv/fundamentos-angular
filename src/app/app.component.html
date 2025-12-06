@@ -1,23 +1,9 @@
-<div class="list">
-  <div class="item item--odd">
-    <p class="item__name">Kuririn da Silva</p>
-    <p class="item__age">01 ano</p>
-  </div>
-  <div class="item item--highlighted">
-    <p class="item__name">Fulano sa Silva</p>
-    <p class="item__age">34 anos</p>
-  </div>
-  <div class="item item--odd">
-    <p class="item__name">Jorginho Carvalho</p>
-    <p class="item__age">55 anos</p>
-  </div>
-  <div class="item">
-    <p class="item__name">Joãozinho da Silva</p>
-    <p class="item__age">18 anos</p>
+<div class="list" >
+  <div class="item" *ngFor="let pessoa of listPessoas; let i = index; let isOdd = odd" [class.item--odd]="isOdd">
+    <p class="item__name">{{ i }} - {{ pessoa.nome }}</p>
+    <p class="item__age">{{ pessoa.idade }} anos</p>
   </div>
 </div>
-
-<div *ngFor="let item of listPessoas">{{item}}</div>
 
 <!-- <div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou uma div!</div>
 
