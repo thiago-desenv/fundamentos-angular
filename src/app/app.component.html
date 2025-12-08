@@ -1,5 +1,20 @@
 <div class="list" >
-  <app-pessoa [personSelectedIndex]="personSelectedIndex" [listPessoas]="listPessoas"></app-pessoa>
+  <app-pessoa
+    *ngFor="
+      let pessoa of listPessoas;
+      let i = index;
+      let isOdd = odd;
+      let isFirst = first;
+      let isLast = last;"
+    [nome]="pessoa.nome"
+    [idade]="pessoa.idade"
+    [index]="i"
+    [isFirst]="isFirst"
+    [isLast]="isLast"
+    [isOdd]="isOdd"
+    [isSelected]="indexPessoaSelecionada === i"
+    (onPessoaSelecionadaEmitt)="pessoaSelecionada($event)">
+  </app-pessoa>
   <!-- <div
     class="item"
     *ngFor="

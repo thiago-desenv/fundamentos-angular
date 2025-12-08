@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pessoa',
@@ -6,11 +6,17 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./pessoa.component.scss']
 })
 export class PessoaComponent {
-  @Input({ required: true }) personSelectedIndex: number | undefined;
-  @Input({ required: true }) listPessoas: any;
+  @Input({ required: true }) nome: string = '';
+  @Input({ required: true }) idade: number = 0;
+  @Input({ required: true }) index: number = 0;
+  @Input({ required: true }) isOdd: boolean = false;
+  @Input({ required: true }) isFirst: boolean = false;
+  @Input({ required: true }) isLast: boolean = false;
+  @Input({ required: true }) isSelected: boolean = false;
 
+  @Output() onPessoaSelecionadaEmitt = new EventEmitter<number>();
 
-  selectPerson(index: number) {
-    this.personSelectedIndex = index;
+  pessoaSelecionada() {
+    this.onPessoaSelecionadaEmitt.emit(this.index);
   }
 }

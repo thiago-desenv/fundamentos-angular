@@ -6,13 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  personSelectedIndex: number | undefined = 1;
+  indexPessoaSelecionada: number | undefined;
   listPessoas = [
     { nome: 'Kuririn da Silva', idade: 1 },
     { nome: 'Fulano sa Silva', idade: 34 },
     { nome: 'Jorginho Carvalho', idade: 55 },
     { nome: 'Joãozinho da Silva', idade: 18 }
   ];
+
+  pessoaSelecionada(index: number) {
+    this.indexPessoaSelecionada = index;
+  }
 
   // selectPerson(index: number) {
   //   this.personSelectedIndex = index;
