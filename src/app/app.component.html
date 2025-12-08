@@ -1,5 +1,6 @@
 <div class="list" >
-  <div
+  <app-pessoa [personSelectedIndex]="personSelectedIndex" [listPessoas]="listPessoas"></app-pessoa>
+  <!-- <div
     class="item"
     *ngFor="
         let pessoa of listPessoas;
@@ -14,7 +15,7 @@
     <p class="item__age">{{ pessoa.idade }} anos</p>
     <p class="item__age" *ngIf="isFirst">É o primeiro</p>
     <p class="item__age" *ngIf="isLast">É o último</p>
-  </div>
+  </div> -->
 </div>
 
 <!-- <div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou uma div!</div>
