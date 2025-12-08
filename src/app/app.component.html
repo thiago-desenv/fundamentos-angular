@@ -1,5 +1,13 @@
-<div class="list" >
-  <app-pessoa
+<h1 [ngStyle]="{
+  'font-size': fontSize + 'px',
+  'color': textColor
+}">Sou um H1</h1>
+
+<button (click)="aumentarTamanhoFonte()">+A</button>
+<button (click)="alternarFontColor()">{{ buttonText }}</button>
+
+<!-- <div class="list" > -->
+  <!-- <app-pessoa
     *ngFor="
       let pessoa of listPessoas;
       let i = index;
@@ -14,7 +22,7 @@
     [isOdd]="isOdd"
     [isSelected]="indexPessoaSelecionada === i"
     (onPessoaSelecionadaEmitt)="pessoaSelecionada($event)">
-  </app-pessoa>
+  </app-pessoa> -->
   <!-- <div
     class="item"
     *ngFor="
@@ -31,7 +39,7 @@
     <p class="item__age" *ngIf="isFirst">É o primeiro</p>
     <p class="item__age" *ngIf="isLast">É o último</p>
   </div> -->
-</div>
+<!-- </div> -->
 
 <!-- <div style="background-color: green;" *ngIf="minhaProp; else meuTemplate">Sou uma div!</div>
 

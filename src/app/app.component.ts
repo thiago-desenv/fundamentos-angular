@@ -6,17 +6,35 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  indexPessoaSelecionada: number | undefined;
-  listPessoas = [
-    { nome: 'Kuririn da Silva', idade: 1 },
-    { nome: 'Fulano sa Silva', idade: 34 },
-    { nome: 'Jorginho Carvalho', idade: 55 },
-    { nome: 'Joãozinho da Silva', idade: 18 }
-  ];
+  fontSize: number = 15;
+  textColor: 'green' | 'orange' = 'orange';
+  buttonText: 'Verde' | 'Laranja' = 'Laranja';
 
-  pessoaSelecionada(index: number) {
-    this.indexPessoaSelecionada = index;
+  aumentarTamanhoFonte() {
+    this.fontSize += 1;
   }
+
+  alternarFontColor() {
+    if(this.textColor === 'green') {
+      this.textColor = 'orange';
+      this.buttonText = 'Verde';
+    } else {
+      this.textColor = 'green';
+      this.buttonText = 'Laranja';
+    }
+  }
+
+  // indexPessoaSelecionada: number | undefined;
+  // listPessoas = [
+  //   { nome: 'Kuririn da Silva', idade: 1 },
+  //   { nome: 'Fulano sa Silva', idade: 34 },
+  //   { nome: 'Jorginho Carvalho', idade: 55 },
+  //   { nome: 'Joãozinho da Silva', idade: 18 }
+  // ];
+
+  // pessoaSelecionada(index: number) {
+  //   this.indexPessoaSelecionada = index;
+  // }
 
   // selectPerson(index: number) {
   //   this.personSelectedIndex = index;
