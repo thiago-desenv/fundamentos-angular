@@ -9,9 +9,12 @@ export class AppComponent {
   fontSize: number = 15;
   textColor: 'green' | 'orange' = 'orange';
   buttonText: 'Verde' | 'Laranja' = 'Laranja';
+  stylesString: string = 'font-size: 15px; color: green';
 
   aumentarTamanhoFonte() {
     this.fontSize += 1;
+
+    this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
   }
 
   alternarFontColor() {
@@ -22,6 +25,8 @@ export class AppComponent {
       this.textColor = 'green';
       this.buttonText = 'Laranja';
     }
+
+    this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
   }
 
   // indexPessoaSelecionada: number | undefined;
