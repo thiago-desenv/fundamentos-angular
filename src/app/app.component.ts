@@ -10,11 +10,20 @@ export class AppComponent {
   textColor: 'green' | 'orange' = 'orange';
   buttonText: 'Verde' | 'Laranja' = 'Laranja';
   stylesString: string = 'font-size: 15px; color: green';
+  stylesObj = {
+    'font-size': this.fontSize + 'px',
+    'color': this.textColor
+  };
 
   aumentarTamanhoFonte() {
     this.fontSize += 1;
 
     this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
+    this.stylesObj['font-size'] = this.fontSize + 'px';
+    this.  stylesObj = {
+    'font-size': this.fontSize + 'px',
+    'color': this.textColor
+  };
   }
 
   alternarFontColor() {
@@ -27,6 +36,10 @@ export class AppComponent {
     }
 
     this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
+    this.stylesObj = {
+    'font-size': this.fontSize + 'px',
+    'color': this.textColor
+    };
   }
 
   // indexPessoaSelecionada: number | undefined;
