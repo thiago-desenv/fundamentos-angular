@@ -6,41 +6,51 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  fontSize: number = 15;
-  textColor: 'green' | 'orange' = 'orange';
-  buttonText: 'Verde' | 'Laranja' = 'Laranja';
-  stylesString: string = 'font-size: 15px; color: green';
-  stylesObj = {
-    'font-size': this.fontSize + 'px',
-    'color': this.textColor
-  };
+  isGreen: boolean = true;
 
-  aumentarTamanhoFonte() {
-    this.fontSize += 1;
-
-    this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
-    this.stylesObj['font-size'] = this.fontSize + 'px';
-    this.  stylesObj = {
-    'font-size': this.fontSize + 'px',
-    'color': this.textColor
-  };
+  mudarParaVerde() {
+    this.isGreen = true;
   }
 
-  alternarFontColor() {
-    if(this.textColor === 'green') {
-      this.textColor = 'orange';
-      this.buttonText = 'Verde';
-    } else {
-      this.textColor = 'green';
-      this.buttonText = 'Laranja';
-    }
-
-    this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
-    this.stylesObj = {
-    'font-size': this.fontSize + 'px',
-    'color': this.textColor
-    };
+  mudarParaLaranha() {
+    this.isGreen = false;
   }
+
+  // fontSize: number = 15;
+  // textColor: 'green' | 'orange' = 'orange';
+  // buttonText: 'Verde' | 'Laranja' = 'Laranja';
+  // stylesString: string = 'font-size: 15px; color: green';
+  // stylesObj = {
+  //   'font-size': this.fontSize + 'px',
+  //   'color': this.textColor
+  // };
+
+  // aumentarTamanhoFonte() {
+  //   this.fontSize += 1;
+
+  //   this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
+  //   this.stylesObj['font-size'] = this.fontSize + 'px';
+  //   this.  stylesObj = {
+  //   'font-size': this.fontSize + 'px',
+  //   'color': this.textColor
+  // };
+  // }
+
+  // alternarFontColor() {
+  //   if(this.textColor === 'green') {
+  //     this.textColor = 'orange';
+  //     this.buttonText = 'Verde';
+  //   } else {
+  //     this.textColor = 'green';
+  //     this.buttonText = 'Laranja';
+  //   }
+
+  //   this.stylesString = `font-size: ${this.fontSize}px; color: ${this.textColor};`;
+  //   this.stylesObj = {
+  //   'font-size': this.fontSize + 'px',
+  //   'color': this.textColor
+  //   };
+  // }
 
   // indexPessoaSelecionada: number | undefined;
   // listPessoas = [
