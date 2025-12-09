@@ -6,15 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  isGreen: boolean = true;
+  text = "Kuririn";
+  animal = { name: 'Kuririn' };
 
-  mudarParaVerde() {
-    this.isGreen = true;
-  }
+  // isGreen: boolean = true;
 
-  mudarParaLaranha() {
-    this.isGreen = false;
-  }
+  // mudarParaVerde() {
+  //   this.isGreen = true;
+  // }
+
+  // mudarParaLaranha() {
+  //   this.isGreen = false;
+  // }
 
   // fontSize: number = 15;
   // textColor: 'green' | 'orange' = 'orange';
