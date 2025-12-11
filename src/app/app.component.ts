@@ -22,15 +22,6 @@ export class AppComponent {
     status: 3
   };
 
-  getStyle(status: number) {
-    console.log('getStyle');
-    return {
-      'active': status === 1,
-      'partial': status === 2,
-      'blocked': status === 3
-    }
-  }
-
   // isGreen: boolean = true;
 
   // mudarParaVerde() {
