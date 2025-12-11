@@ -2,6 +2,23 @@
 
 <h1>{{ animal | json}}</h1>
 
+<h1 [class]="{
+      'active': animal.status === 1,
+      'partial': animal.status === 2,
+      'blocked': animal.status === 3
+    }"
+>{{ animal.name }}</h1>
+<h1 [class]="{
+      'active': animal2.status === 1,
+      'partial': animal2.status === 2,
+      'blocked': animal2.status === 3
+    }">{{ animal2.name }}</h1>
+<h1 [class]="{
+      'active': animal3.status === 1,
+      'partial': animal3.status === 2,
+      'blocked': animal3.status === 3
+    }">{{ animal3.name }}</h1>
+
 <!-- <h1 [ngClass]="{
   'is-big is-green': isGreen,
   'is-orange': !isGreen

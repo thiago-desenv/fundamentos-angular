@@ -7,7 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   text = "Kuririn";
-  animal = { name: 'Kuririn' };
+  animal = {
+    name: 'Kuririn',
+    status: 1
+  };
+
+  animal2 = {
+    name: 'Bread',
+    status: 2
+  };
+
+  animal3 = {
+    name: 'Zeus',
+    status: 3
+  };
 
   // isGreen: boolean = true;
 
