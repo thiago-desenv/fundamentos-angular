@@ -2,11 +2,7 @@
 
 <h1>{{ animal | json}}</h1>
 
-<h1 [class]="{
-      'active': animal.status === 1,
-      'partial': animal.status === 2,
-      'blocked': animal.status === 3
-    }"
+<h1 [class]="getStyle(animal.status)"
 >{{ animal.name }}</h1>
 <h1 [class]="{
       'active': animal2.status === 1,
